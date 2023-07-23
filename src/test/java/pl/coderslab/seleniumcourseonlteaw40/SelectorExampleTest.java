@@ -2,7 +2,6 @@ package pl.coderslab.seleniumcourseonlteaw40;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,14 +26,5 @@ public class SelectorExampleTest {
 
         WebElement hotelLocationInputBox = driver.findElement(By.name("hotel_location"));
         hotelLocationInputBox.sendKeys("Warsaw");
-    }
-    @Test
-    public void byCSS() {
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://hotel-testlab.coderslab.pl/en/");
-        WebElement hotelCheckInBoxCSS = driver.findElement(By.cssSelector("#check_in_time"));
-        hotelCheckInBoxCSS.sendKeys("24-07-2023" + Keys.ENTER);
-        WebElement hotelCheckOutBoxCSS = driver.findElement(By.cssSelector("#check_out_time"));
-        hotelCheckOutBoxCSS.sendKeys("25-07-2023" + Keys.ENTER);
     }
 }
