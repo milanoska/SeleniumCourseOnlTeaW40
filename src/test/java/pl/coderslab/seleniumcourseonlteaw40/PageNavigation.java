@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PageNavigationTest {
     @Test
-    public void searchWithDuckDuckGo() {
+    public void PageNavigation() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://coderslab.pl/pl");
         driver.get("https://mystore-testlab.coderslab.pl/index.php");
